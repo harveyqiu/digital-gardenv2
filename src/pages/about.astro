@@ -1,0 +1,29 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+---
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>Hello, I'm Harvey Chiu.</h1>
+			<p>I am a law school student who has interest in tech, programming.</p>
+			<p>I am curious about privacy law and antitrust law. And sometimes I read something about commercial law.</p>
+			<p>I am a Chinese so you may see there are most posts written in Chinese.</p>
+			<p>I self-learn Python, Javascript, CSS and HTML. You can check my buggy codes at <a href="https://github.com/harveyqiu/">Github</a>. I don't know anything about website design so you will notice this website is plain and ugly.</p>
+			<p>I used to edit videos with Davinci, Premiere Pro or FinalCut Pro X (using only Davinci currently), and make some vfx with AfterEffects.</p>
+			<p>I'd like to use fancy apps or services.</p>
+			<p>I <a href="https://trakt.tv/users/harv3yqiu">watched a lot of</a> American, British, Korean, Japanese TV Plays.</p>
+			<p>For songs, I enjoy listening to post-rock, rock and folk music. But I can't sing.</p>
+			<p>If you believe in MBTI, I am usually intp but sometimes istp.</p>
+		</main>
+		<Footer />
+	</body>
+</html>
