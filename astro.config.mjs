@@ -8,5 +8,7 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://garden.harveyqiu.xyz',
-  integrations: [mdx(), sitemap(), react(), tailwind()]
+  integrations: [mdx(), sitemap(), react(), tailwind({
+    config: {applyBaseStyles: false}
+  })]
 });

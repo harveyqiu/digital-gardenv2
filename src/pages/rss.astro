@@ -1,0 +1,33 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+
+---
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<div class="flex flex-col">
+                <div>
+                    <a href="/article/rss.xml">Subscribe to Article RSS</a>
+                </div>
+                <div>
+                    <a href="/grumble/rss.xml">Subscribe to Grumble RSS</a> 
+                </div>
+                <div>
+                    <a href="/project/rss.xml">Subscribe to Project RSS</a>    
+                </div>
+            </div>
+			<Footer />
+		</main>
+	</body>
+</html>
