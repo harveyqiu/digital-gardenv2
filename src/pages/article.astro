@@ -40,14 +40,14 @@ const posts = (await Astro.glob('./article/*.{md,mdx}')).filter((post) => !post.
 				<ul>
 					{posts.map((post) => (
 						<li>
-							<time datetime={post.frontmatter.updatedDate}>
+							<time datetime={post.frontmatter.updatedDate} class="text-base text-right mr-4">
 								{new Date(post.frontmatter.updatedDate).toLocaleDateString('en-us', {
 									year: 'numeric',
 									month: 'short',
 									day: 'numeric',
 								})}
 							</time>
-							<a href={post.url}>{post.frontmatter.title}</a>
+							<a href={post.url} class="text-base">{post.frontmatter.title}</a>
 						</li>
 					))}
 				</ul>

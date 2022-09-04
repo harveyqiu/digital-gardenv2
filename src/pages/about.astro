@@ -9,6 +9,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 <html lang="en-us">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			p {
+				@apply text-base;
+			}
+		</style>
 	</head>
 	<body>
 		<Header title={SITE_TITLE} />
@@ -21,7 +26,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 			<p class="text-base">I used to edit videos with Davinci, Premiere Pro or FinalCut Pro X (using only Davinci currently), and make some vfx with AfterEffects.</p>
 			<p class="text-base">I'd like to use fancy apps or services.</p>
 			<p class="text-base">I <a href="https://trakt.tv/users/harv3yqiu">watched a lot of</a> American, British, Korean, Japanese TV Plays.</p>
-			<p class="text-base">For songs, I enjoy listening to post-rock, rock and folk music. But I can't sing.</p>
+			<p class="text-base">For songs, I enjoy listening to post-rock, rock and folk music.</p>
 			<p class="text-base">If you believe in MBTI, I am usually intp but sometimes istp.</p>
 		</main>
 		<Footer />

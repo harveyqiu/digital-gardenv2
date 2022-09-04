@@ -46,12 +46,13 @@ const {
 				@apply mb-3 !important;
 			}
 			ul {
-				@apply list-disc;
-				@apply px-12;
+				@apply list-disc !important;
+				@apply px-12 !important;
+				@apply mb-3 !important;
 			}
 
 			ul li {
-				@apply leading-8;
+				@apply leading-8 !important;
 			}
 			.footnotes {
 				@apply mt-10;
@@ -83,9 +84,11 @@ const {
 					/>
 				)}
 				<div class="container mx-auto w-3/5">
-					<div class="text-2xl my-3 font-bold">{title}</div>
-					{updatedDate && <div class="text-base my-1">Last updated on <time>{updatedDate}</time></div>}
-					<hr class="h-2" />
+					<div>
+						<div class="text-2xl my-3 font-bold">{title}</div>
+						{updatedDate && <div class="text-base my-2">Last updated on <time>{updatedDate}</time></div>}
+						<hr class="h-2" />
+					</div>
 					<div class="mt-3">
 						<slot />
 					</div>
