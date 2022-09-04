@@ -2,8 +2,8 @@
 layout: "../../layouts/BlogPost.astro"
 title: "Personal Search Engine"
 description: ""
-startDate: "2022-09-02"
-updated: "2022-09-03"
+createdDate: "2022-09-02"
+updatedDate: "2022-09-03"
 topics: ["Tech"]
 aliases: []
 growthStage: "seedling"
@@ -41,7 +41,7 @@ draft: false
 
 比如有5条内容，分别来自不同的来源。汇总整理后它们以json的格式呈现。
 
-```
+```json
 [
 	{
 		id: 1,
@@ -66,9 +66,9 @@ draft: false
 ]
 ```
 
-转换为inverted index为是这样的。
+转换为inverted index是这样的。
 
-```
+```json
 [
 	"Hello": [1, 2, 4, 5],
 	"World": [1, 3, 5],
@@ -80,13 +80,13 @@ draft: false
 
 当然，你在构建inverted index的时候也可以标识每个索引词在每条内容中的具体位置。那么，就可能是这样。
 
-```
+```json
 [
 	"Hello": [
 		{ id: 1, pos: [ 0 ] }, 
 		{ id: 2, pos: [ 0 ] }, 
 		{ id: 4, pos: [ 1 ] },
-    { id: 5, pos: [ 0 ] }
+    	{ id: 5, pos: [ 0 ] }
 	 ],
 	 ...下面的就不列举了
 	 ...当一条内容中有多个索引词时，pos数组内增加几个位置即可

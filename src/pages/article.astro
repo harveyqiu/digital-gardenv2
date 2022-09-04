@@ -6,7 +6,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 
 // Use Astro.glob() to fetch all posts, and then sort them by date.
 const posts = (await Astro.glob('./article/*.{md,mdx}')).filter((post) => !post.frontmatter.draft).sort(
-	(a, b) => new Date(b.frontmatter.updated).valueOf() - new Date(a.frontmatter.updated).valueOf()
+	(a, b) => new Date(b.frontmatter.updatedDate).valueOf() - new Date(a.frontmatter.updatedDate).valueOf()
 );
 
 ---
@@ -40,8 +40,8 @@ const posts = (await Astro.glob('./article/*.{md,mdx}')).filter((post) => !post.
 				<ul>
 					{posts.map((post) => (
 						<li>
-							<time datetime={post.frontmatter.updated}>
-								{new Date(post.frontmatter.updated).toLocaleDateString('en-us', {
+							<time datetime={post.frontmatter.updatedDate}>
+								{new Date(post.frontmatter.updatedDate).toLocaleDateString('en-us', {
 									year: 'numeric',
 									month: 'short',
 									day: 'numeric',

@@ -12,6 +12,6 @@ export const get = () =>
 		items: articles.map((article) => ({
 			link: article.url,
 			title: article.frontmatter.title,
-			pubDate: article.frontmatter.updated
+			pubDate: article.frontmatter.updatedDate
 		}))
 	});
