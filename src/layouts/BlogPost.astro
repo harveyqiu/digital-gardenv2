@@ -62,11 +62,15 @@ const {
 				@apply ml-8 !important;
 			}
 			pre {
-				@apply w-2/3;
-				@apply p-3 !important;
 				@apply mx-auto !important;
 				@apply mb-3 !important;
-				@apply rounded-xl;
+			}
+			@media screen(lg) {
+				pre {
+					@apply w-2/3;
+					@apply p-3 !important;
+					@apply rounded-xl;
+				}
 			}
 		</style>
 	</head>
@@ -83,7 +87,7 @@ const {
 						alt=""
 					/>
 				)}
-				<div class="container mx-auto w-3/5">
+				<div class="mx-auto w-11/12 lg:w-3/5">
 					<div>
 						<div class="text-2xl my-3 font-bold">{title}</div>
 						{updatedDate && <div class="text-base my-2">Last updated on <time>{updatedDate}</time></div>}
