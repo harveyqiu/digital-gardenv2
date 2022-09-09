@@ -27,7 +27,7 @@ draft: false
 设置后之后你可以选择输入一些你需要爬取的网站的地址，然后yacy就会慢慢的爬取，然后建立索引。建立完索引之后就可以进行搜索了。
 我爬取了几个我很欣赏的网站，总体的流程还是很方便的。其中还有一个小插曲，我本以为[Gwern](https://www.gwern.net)这个网站的体量应该不大，结果刚刚开始爬取，就发现yacy索引了2万多的页面，我感觉有些不对劲，就终止了对这个网站的爬取。
 
-我是一个三分钟热度的人，当我花了一天多的时间研究yacy和我已经爬取的内容，我问了自己一个问题，我做的这些事情，难道使用google不能完成吗？如果我只是要搜索某个网站的内容，我完全可以在google中使用site:www.example.com的高级搜索语法。如果我需要搜索特定的一些网站中的内容，我也可以选择使用google的[cse](https://cse.google.com)。[^1]
+我是一个三分钟热度的人，当我花了一天多的时间研究yacy和我已经爬取的内容，我问了自己一个问题，我做的这些事情，难道使用google不能完成吗？如果我只是要搜索某个网站的内容，我完全可以在google中使用 “ site:www.example.com ” 的高级搜索语法。如果我需要搜索特定的一些网站中的内容，我也可以选择使用google的[cse](https://cse.google.com)。[^1]
 
 [^1]: 具体方法，见[少数派幕后 | 为了「派早报」不翻车，我们做个了官方新闻搜索引擎](https://sspai.com/prime/story/whitelisted-news-custom-search)。
 
@@ -101,7 +101,9 @@ draft: false
 
 我知道现在有公开的中文分词方案，但我总觉得这不应该是我一个踏入的未知领域。
 
-我放弃了自己写生成inverted index的算法，转而试图找寻现有的全文搜索的开源方案。就我了解，现在全文搜索的主要开源方案包括ElasticSearch、Apache Solr、TypeSense、MeiliSearch。前面两个都基于Java开发，我恐于Java对内存的高占用，所以一开始就排除了。TypeSense现在还不支持中文，MeiliSearch在索引增多的时候性能下降且单个字段内容的长度存在一定限制。所以这四个方案都被我排除了。
+我放弃了自己写生成inverted index的算法，转而试图找寻现有的全文搜索的开源方案。就我了解，现在全文搜索的主要开源方案包括ElasticSearch、Apache Solr、TypeSense、MeiliSearch。前面两个都基于Java开发，我恐于Java对内存的高占用，所以一开始就排除了。TypeSense现在还不支持中文，MeiliSearch在索引增多的时候性能下降且单个字段内容的长度存在一定限制。所以这四个方案都被我排除了。[^2]
+
+[^2]: 事后我看到另外一篇关于个人搜索引擎的文章，作者写道：“Maintenance free because many self-built tools are a huge timesink, and I want this to save me time. Money free because I intend to keep this tool for many years and don't like continuous payments.”，我十分赞同。 详见[A Local Search Engine](https://siboehm.com/articles/21/a-local-search-engine)。
 
 到了这个阶段的时候，其实我已经有点泄气了，我问了问自己是否真的有建立个人搜索引擎的需求。现在的我并不是一个知识工作者，老实说并没有那么强的搜索自己过往创造的内容的需求。
 
