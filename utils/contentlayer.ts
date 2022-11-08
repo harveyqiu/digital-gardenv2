@@ -10,8 +10,8 @@ export function dateSortDesc(a: string, b: string) {
     return 0
   }
 
-export function sortedBlogPost(allBlogs: MDXDocument[]) {
-    return allBlogs.sort((a, b) => dateSortDesc(a.updatedDate, b.updatedDate))
+export function sortedPosts(posts: MDXDocument[]) {
+    return posts.sort((a, b) => dateSortDesc(a.updatedDate, b.updatedDate))
   }
 
 export async function getAllTags(allBlogs: Blog[]) {
