@@ -58,28 +58,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
             </div>
           </header>
           <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0">
-            <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-              <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
-              <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={discussUrl(path)} rel="nofollow">
-                  Discuss on Twitter
-                </Link>
-                {` • `}
-                <Link href={editUrl(filePath)}>View on GitHub</Link>
-              </div>
-              {siteMetadata.comments && (
-                <div
-                  className="pt-6 pb-6 text-center text-gray-700 dark:text-gray-300"
-                  id="comment"
-                >
-                  {!loadComments && (
-                    <button onClick={() => setLoadComments(true)}>Load Comments</button>
-                  )}
-                  {loadComments && <Comments commentsConfig={siteMetadata.comments} slug={slug} />}
-                </div>
-              )}
-            </div>
-            <footer>
+          <div>
               <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
                 {tags && (
                   <div className="py-4 xl:py-8">
@@ -127,7 +106,29 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
                   &larr; Back to the blog
                 </Link>
               </div>
-            </footer>
+            </div>
+            <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
+              <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
+              <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
+                <Link href={discussUrl(path)} rel="nofollow">
+                  Discuss on Twitter
+                </Link>
+                {` • `}
+                <Link href={editUrl(filePath)}>View on GitHub</Link>
+              </div>
+              {siteMetadata.comments && (
+                <div
+                  className="pt-6 pb-6 text-center text-gray-700 dark:text-gray-300"
+                  id="comment"
+                >
+                  {!loadComments && (
+                    <button onClick={() => setLoadComments(true)}>Load Comments</button>
+                  )}
+                  {loadComments && <Comments commentsConfig={siteMetadata.comments} slug={slug} />}
+                </div>
+              )}
+            </div>
+
           </div>
         </div>
       </article>
