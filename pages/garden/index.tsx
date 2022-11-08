@@ -3,14 +3,14 @@ import ListLayout from '@/layouts/ListLayout'
 import { PageSEO } from '@/components/SEO'
 import { allCoreContent } from 'pliny/utils/contentlayer'
 import { InferGetStaticPropsType } from 'next'
-import { allBlogs } from 'contentlayer/generated'
+import { allNotes } from 'contentlayer/generated'
 import { sortedPosts } from 'utils/contentlayer'
-import type { Blog } from 'contentlayer/generated'
+import type { Note } from 'contentlayer/generated'
 
 export const POSTS_PER_PAGE = 7
 
 export const getStaticProps = async () => {
-  const posts = sortedPosts(allBlogs) as Blog[]
+  const posts = sortedPosts(allNotes) as Note[]
   const initialDisplayPosts = posts.slice(0, POSTS_PER_PAGE)
   const pagination = {
     currentPage: 1,

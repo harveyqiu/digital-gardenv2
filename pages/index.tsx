@@ -6,14 +6,15 @@ import { formatDate } from 'pliny/utils/formatDate'
 import { allCoreContent } from 'pliny/utils/contentlayer'
 import { InferGetStaticPropsType } from 'next'
 import { allBlogs } from 'contentlayer/generated'
+import { sortedPosts } from 'utils/contentlayer'
 import type { Blog } from 'contentlayer/generated'
-import { sortedBlogPost } from 'utils/contentlayer'
+
 
 const MAX_DISPLAY = 7
 
 export const getStaticProps = async () => {
-  const sortedPosts = sortedBlogPost(allBlogs) as Blog[]
-  const posts = allCoreContent(sortedPosts)
+  const _sortedPosts = sortedPosts(allBlogs) as Blog[]
+  const posts = allCoreContent(_sortedPosts)
 
   return { props: { posts } }
 }
