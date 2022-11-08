@@ -1,0 +1,148 @@
+---
+title: "Time Tracking"
+description: "You only waste time if you’re not intentional about how you spend it."
+createdDate: "2022-04-15"
+updatedDate: "2022-06-12"
+tags: ["Productivity"]
+---
+
+
+我很喜欢《Make Time》中的一句话：“You only waste time if you’re not intentional about how you spend it.”这句话本来是想告诉大家要有意识的使用自己的时间，但用于这篇文章是想说，你花费了时间之后才意识到你是怎么使用的也是很重要的。可能你并不能持续的督促自己想让自己做的事情，但如果在事后能有某种方式提醒你做过了什么事情，总比没有好。
+
+# 为什么要记录时间？
+我们计划的时间使用方式往往与实际的时间使用方式往往不同。你可能计划晚上写30分钟的文章，但事实上因为没有灵感你只写了15分钟，这种计划的时间使用方式与实际的时间使用方式无法在日历上直接呈现出来或者呈现的成本过高。你可能只想看60分钟的影视剧结果却发现自己一下子看完了整季。
+
+或者你处理着一件或者同时处理多件需要按照时间计费的项目，需要记录你在每个项目上所花费的时间以向你的客户收费。
+
+或者你想追踪自己每周在自己的兴趣爱好上所花费的时间等等，时间记录的用途还有很多，但其最重要的作用就是打破我们对时间错误的感知（你认为只过了1小时，其实过了2小时/半小时）。
+
+# 我使用过的软件
+我使用过的软件包括时间跟踪软件（time-tracking software，更加倾向于自动记录）和时间记录软件（time-logging software，更加倾向于手动记录）。
+
+## 时间跟踪软件
+
+### ManicTime
+
+我最初接触time tracking是因为ManicTime。在2016年，就在我的Windows PC上安装了[ManicTime](https://www.manictime.com/)这款软件。
+
+ManicTime是一个十分可靠的软件，从我第一次安装ManicTime后，我就再也没有重装或者卸载过这款软件，如今打开这个软件的统计界面，我仍然可以看到我在2017年的某个日子用了我的Windows PC打开了什么软件、打开之后使用了多长时间。
+
+在这5年多的时间里，我没有为ManicTime花过一分钱，但它依旧稳定的、默默无闻的在后台运行着。
+
+我后来也把ManicTime推荐给了我的两位好友，他们也对该软件赞誉有加。
+
+### Timing
+
+后来我有了一台mac，我希望延续这种时间记录的方式到我的Mac上，后来我找到了这样的一款软件，那就是[Timing](https://timingapp.com/)。
+
+我当时购买了一年的[Setapp](https://setapp.com)订阅服务，Timing是订阅服务的一部分。第二年需要续费Setapp的时候，我发现我没有那么多的流动资金再去续费，因此就没有再使用过Timing。
+
+使用的Timing的时候，我有一份远程实习的工作，做一家公司的Web Full-Stack Intern。因为是远程工作，我需要记录实际花费在各个项目上的时间然后汇报给我的上司以计算每月的工资。我当时就是根据timing上关于IDE、调试网页、开发文档的时间来向公司汇报我的工时。
+
+### TimeSink
+
+后来开始用TimeSink。TimeSink是我一次性买断的产品，价格我已经记不清了，大概50元到60元的价格。这并不是一个给我留下特别深刻印象的软件。
+
+### RescueTime
+
+在TimeSink之后，我开始使用RescueTime。我记得我开始使用[RescueTime](https://www.rescuetime.com/dashboard)是因为看到别人在github上开源的代码，我看代码的时候发现其作者使用了这个服务，便去下载了。
+
+除了以上我所使用过的时间自动记录软件之外，我还知道一个Rize。[^1]
+
+[^1]: 我知道Rize是因为看了来自youtube博主Ali Abdaal的一期视频。
+
+## 时间记录软件
+
+### Toggl Track / Timery
+
+除了以上时间自动记录软件之外，我还使用Toggl Track用于手动记录我使用的时间。
+
+我在去年的时候，一直在用一款叫toggl track的软件跟踪我每天花在准备考试上的时间。今年我也仍然在使用它来跟踪我花在不同项目上的时间，包括写自己的blog、写代码等等。
+
+去年的时候我仅使用了Toggl Track官方的软件，但最近一段时间开始使用一款第三方的软件，叫作Timery。
+
+Toggl Track本身其实是有免费的服务，但Timery却是要收费的。[^2]
+
+[^2]: 老实说我有点没有看懂，但愿意为好产品买单也是我个人的一种消费哲学吧。
+
+# 我现在所使用的时间记录软件、怎么用以及为什么？
+
+## ManicTime
+ManicTime我感觉没有太多需要进一步介绍使用方法，该软件只是非常单纯的记录我每个软件的使用时长。
+
+## RescueTime
+
+### 我选择RescueTime的原因
+- Web统计界面
+- 每周回顾邮件
+- 支持API
+
+RescueTime与过去我使用的几个时间记录软件不太一样，因为它有一个Web界面、会每周给发一封邮件告诉我过去一周的统计。[^3][^4]
+
+[^3]: 尽管Timing其实也有Web界面，但因为我当时使用的是Setapp中的Timing，其中并未包含Timing Web。
+[^4]: 在2022年5月之前，我在Mac和Win上都使用了RescueTime进行时间跟踪。5月之后，我购买了半年的Setapp，并安装了其中的Timing，于是选择将Mac上的RescueTime卸载了。
+
+在使用RescueTime之前，我几乎没有去主动看时间跟踪软件中软件使用时长的统计。软件永远在记录着数据，但我却没有看过它们或者用数据来指引我的生活。
+
+RescueTime的使用让我开始意识到了这个问题，但我只是在每次查看RescueTime每周发来的邮件会想到说“哦，上周打守望先锋的时间有点长了，这周应该少打一点了”，第二天打开游戏的时候就根本想不起自己昨天的想法了。
+
+### 个人认为RescueTime的缺点
+像RescueTime、Timing、Rize这样的软件，除了能够记录各个软件所使用的时间之外，还能够根据软件计算一段时间的生产效率值。比如使用Visual Code就可以认为是高产的，而使用守望先锋这个软件就是低产的。
+
+这些软件也可以根据浏览网页的不同计算生产效率值，比如浏览netflix网站是低产的，而查看roamresearch中记录的笔记是高产的。我对于RescueTime的不满之一，就在于设定浏览某个网页是否高产这件事上。RescueTime中设定浏览器中的活动是否高产的精细度，只停留在域名层面而不是属于某个域名的某个网页层面。你只能设定浏览bilibili.com这个域名下的所有网页是高产的或者是低产的，你不能规定设定bilibili中的法考视频的页面是高产的同时设定观看B站的守望先锋联赛直播页面是低产的。
+
+另外一个对于RescueTime的不满，是免费版只能查看过去一个星期的统计，而订阅会员又太贵。
+
+## Timing
+我选择Timing的重要一个原因，是因为它解决我在前文说的RescueTime的缺点。我可以在Timing上设定观看B站的某个视频属于学习，是高产的事情，而观看另外一个视频属于娱乐，是低产的。但这也增加了分类的成本，我需要每过一段时间就浏览过的网页的页面进行归类，设定是高产的还是低产（其实并不只是高产还是低产两级，总共有五级评价，RescueTime和Timing都是五级评价）。不过，这也给了我一个机会，根据原始的数据，去回顾一下自己过去一段时间都在做什么、看了些什么。
+
+## Toggl Track / Timery
+
+因为Toggl Track是手动计时，其实很容易出现你做了某个项目之后发现自己刚才没计时的情况。
+
+在我把Toggl Track推荐给我的好友drang7070的时候，他就表示出现过这样的情况很多次。
+
+在我试图全面记录我全天时长的时候，我很少会忘记计时这件事情，因为我所处理的大多数事情都需要使用电脑，而Toggl Track永远在我的dock栏或者Windows的右下角（我记不清了术语了，对不起Windows），所以不太容易忘记。
+
+这段时间我试图记录我做各种事情的时间，但发现其实很困难，做如此详细的时间记录反而增加了使用成本。这可能是因为我是一个很容易切换事件的人，我经常会一个长视频还没完看就切出去打几把游戏之后再继续回来看那个视频。这会导致经常需要点开toggl track去停止以及开始一个新的计时，这挺麻烦的也很容易忘记。
+
+在今年订阅了Timery之后，我弃用了Toggl Track的官方客户端而选择第三方客户端Timery，原因在于Timery提供的Saved Timer功能确实十分方便以及在ios平台和Mac平台都提供了较为完整的快捷指令（Shortcut）模块。
+
+### 为什么不用番茄钟软件
+
+可能有些人会使用如Forest、番茄Todo这样的番茄钟软件通过限制自己使用手机来作为时间记录的一种方式，但这种方式对于我来说并不适用。对于我来说，手机是一个纯然的消遣用的工具，我绝大多数的工作或者是学习都是在电脑上完成，相比手机的诱惑，电脑上的游戏、长视频、博文更容易吸引我的注意力。
+
+另外一点是，这些软件本身都不支持API，难以通过这些软件实现时间记录与效率系统其他模块的联动。
+
+{/* <References>
+<ReferencesLink
+    title="#44: Existential Time Tracking"
+    author="GCP Grey & Myke Hurley"
+    href="https://www.relay.fm/cortex/44"
+/>
+<ReferencesLink
+    title="#45: Cortex Working Group"
+    author="GCP Grey & Myke Hurley"
+    href="https://www.relay.fm/cortex/45"
+/>
+<ReferencesLink
+    title="#101: Productivity 101"
+    author="GCP Grey & Myke Hurley"
+    href="https://www.relay.fm/cortex/101"
+/>
+<ReferencesLink
+    title="#102: Lockdown Productivity"
+    author="GCP Grey & Myke Hurley"
+    href="https://www.relay.fm/cortex/102"
+/>
+<ReferencesLink
+    title="#637: Digging Deep on Tracking Time"
+    author="David Sparks & Stephen Hackett"
+    href="https://www.relay.fm/mpu/637"
+/>
+<ReferencesLink
+    title="#638: A Mac Setup Consulting Company"
+    author="David Sparks & Stephen Hackett"
+    href="https://www.relay.fm/mpu/638"
+/>
+</References> */}
