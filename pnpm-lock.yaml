@@ -5,7 +5,7 @@ specifiers:
   '@next/font': 13.0.2
   '@svgr/webpack': ^6.3.1
   '@tailwindcss/forms': ^0.5.3
-  '@tailwindcss/typography': ^0.5.7
+  '@tailwindcss/typography': ^0.5.8
   '@types/react': ^18.0.18
   '@typescript-eslint/eslint-plugin': ^5.36.2
   '@typescript-eslint/parser': ^5.36.2
@@ -55,7 +55,7 @@ dependencies:
   '@next/bundle-analyzer': 13.0.2
   '@next/font': 13.0.2
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.2
-  '@tailwindcss/typography': 0.5.7_tailwindcss@3.2.2
+  '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.2
   autoprefixer: 10.4.13_postcss@8.4.18
   contentlayer: 0.2.8_esbuild@0.14.38
   esbuild: 0.14.38
@@ -2486,8 +2486,8 @@ packages:
       tailwindcss: 3.2.2_postcss@8.4.18
     dev: false
 
-  /@tailwindcss/typography/0.5.7_tailwindcss@3.2.2:
-    resolution: {integrity: sha512-JTTSTrgZfp6Ki4svhPA4mkd9nmQ/j9EfE7SbHJ1cLtthKkpW2OxsFXzSmxbhYbEkfNIyAyhle5p4SYyKRbz/jg==}
+  /@tailwindcss/typography/0.5.8_tailwindcss@3.2.2:
+    resolution: {integrity: sha512-xGQEp8KXN8Sd8m6R4xYmwxghmswrd0cPnNI2Lc6fmrC3OojysTBJJGSIVwPV56q4t6THFUK3HJ0EaWwpglSxWw==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
     dependencies:
