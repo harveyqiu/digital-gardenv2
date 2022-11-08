@@ -1,0 +1,103 @@
+---
+title: "第二大脑？"
+description: ""
+createdDate: "2022-05-15"
+updatedDate: "2022-05-26"
+tags: ["Workflow"]
+draft: true
+---
+
+我们每天都会产生很多的想法，有些想法我们很快就忘了，有些想法被我们记录下；我们也会看/听别人的想法，有的想法我们记住了，有些想法我们忘了。
+
+笔记软件作为外置大脑，帮助我们消费信息、创作内容。但关于如何管理笔记有着不同的理论。
+
+# 捕捉
+
+## 为什么要捕捉想法？
+捕捉这一步在我看来分为两种，一种是捕捉自己的想法，另一种是捕捉别人的想法。
+
+因为我们自己的想法转瞬即逝，因此我们要捕捉它们，防止有价值的想法流失。
+
+别人的想法也有可能因为各种原因消失
+
+Capture别人的想法要求可回溯，他人的想法可能因各种原因而消失。
+
+我们之所以要Capture，是为了我们之后的行为收集材料。
+
+# Categorize
+## Why do we categorize?
+收集材料之后的，我们需要对自己的想法进行一些分类，通过将同类的想法放在一起，一是为了分析它们之间的关联，从而产生新的想法；二是为了减少后续搜索的成本，在对某个想法进行加工时，你不需要从一个巨大的想法仓库的各个货架上用铲车卸载下来，你所需要的一类想法早就打包在你的脚手架或是工作台旁边，随时等待你下一步的操作。
+
+## How do we categorize？
+
+关于如何归类想法， 存在着多种「归类理论」。归类理论的核心在于以什么为基准进行分类
+这就要回答以某个基准进行分类的意义。
+
+
+其中包括*How to Take Smart Notes*中的以上下文作为分类依据、[P.A.R.A](https://fortelabs.co/blog/para/)的以项目及领域进行分类、以文件类型进行分类、以主题进行分类等等。
+
+[^1]: 我并不确定用“以上下文作为分类依据”是否能够概括Zettelkasten。
+[^2]: 比如将笔记分为反垄断法、反不正当竞争法，然后反垄断法细分经营者集中、垄断协议等，反不正当竞争法下面再细分商业贿赂、虚假宣传等等。
+
+每种「归类理论」都有其优势，但也有其劣势。
+
+## 以上下文(context)作为分类依据进行分类
+
+### Pros
+
+### Cons
+
+## 以主题作为分类依据进行分类
+树形结构
+
+图书馆的分类方法，方便后续查询
+
+但问题在于如何处理某个信息属于交叉话题时的归类
+
+### Pros
+
+### Cons
+1. 随着主题越来越多，整个分类体系将十分庞大
+2. 如何区分A主题和A'主题
+
+以主题为分类依据进行分类，其实与「图书馆学」无异。而图书馆学是一个极为复杂的学科，并非一般人所能够掌握的。
+
+# Summarize
+
+## Why do we summarize
+关于信息总结，又有很多的理论。最常见的是「费曼学习法」 。
+
+但费曼学习法在什么时候运用了，是你记录了每篇笔记之后马上使用，还是说应该等你对于某个话题有一定了解了之后再使用呢？
+
+# Output 
+## Why do we output?
+
+## 
+
+{/* <References>
+<ReferencesLink
+    title="12 Steps to Build a Second Brain"
+    author="Tiago Forte"
+    href="https://fortelabs.co/blog/12-steps-to-build-a-second-brain/"
+/>
+<ReferencesLink
+    title="The PARA Method: A Universal System for Organizing Digital Information"
+    author="Tiago Forte"
+    href="https://fortelabs.co/blog/para/"
+/>
+<ReferencesLink
+    title="P.A.R.A的Notion实践"
+    author="Tiago Forte, Plidezus"
+    href="https://www.notion.so/P-A-R-A-Notion-19909e5aac3049d887197dcfb1e97fd5"
+/>
+<ReferencesLink
+    title="How To Take Smart Notes: 10 Principles to Revolutionize Your Note-Taking and Writing"
+    author="Tiago Forte"
+    href="https://fortelabs.co/blog/how-to-take-smart-notes/"
+/>
+<ReferencesLink
+    title="How to Take Smart Notes Official Website"
+    author=""
+    href="https://takesmartnotes.com/"
+/>
+</References> */}
