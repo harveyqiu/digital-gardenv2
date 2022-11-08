@@ -12,9 +12,9 @@ interface PaginationProps {
   currentPage: number
 }
 interface ListLayoutProps {
-  posts: CoreContent<Blog>[] | CoreContent<Note>[]
+  posts: CoreContent<Blog|Note>[]
   title: string
-  initialDisplayPosts?: CoreContent<Blog>[] | CoreContent<Note>[]
+  initialDisplayPosts?: CoreContent<Blog|Note>[]
   pagination?: PaginationProps
 }
 

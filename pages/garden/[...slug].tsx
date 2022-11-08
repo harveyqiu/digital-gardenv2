@@ -1,5 +1,4 @@
 import { MDXLayoutRenderer } from 'pliny/mdx-components'
-import PageTitle from '@/components/PageTitle'
 import { MDXComponents } from '@/components/MDXComponents'
 import { coreContent } from 'pliny/utils/contentlayer'
 import { InferGetStaticPropsType } from 'next'
