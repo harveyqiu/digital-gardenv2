@@ -9,7 +9,7 @@ const siteMetadata = {
   language: 'zh-CN',
   theme: 'system', // system, dark or light
   siteUrl: 'https://garden.harveyqiu.xyz',
-  siteRepo: 'https://github.com/harveyqiu/digital-gradenv2',
+  siteRepo: 'https://github.com/harveyqiu/digital-gardenv2',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
