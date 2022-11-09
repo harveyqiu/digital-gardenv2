@@ -1,14 +1,16 @@
 ---
 title: "My Digital Life"
 description: "What device, what app, what service I use"
-updatedDate: "2022-05-01"
+updatedDate: "2022-11-09"
 createdDate: "2022-02-23"
 tags: []
 ---
 
 这篇文章，简单说说我的数字生活。
 
-# 我的电子设备
+<TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
+
+# 设备
 - 手机：iPhone 13 128GB
 - 笔记本： MacBookPro 13-inch 2018 8GB + 256GB
 - 耳机： Bose QC35 II、Beats Solo 3、Apple Earpods
@@ -17,19 +19,19 @@ tags: []
 - PC：i7-6820HK + 32GB + 256GB SSD + 1TB HDD + GTX 1070
 - 显示器：DELL P2416D
 
-# 常用的软件/App
+# 电脑软件
 - Microsoft Edge
 - Obsidian[^1]
 - Notion
 - Reeder
-- Visual Code 
+- Visual Code with vscode-nvim extension 
 - SourceTree
-- Proxifier
-- Drafts - 快速记录
-- 小宇宙、Pocket Cast[^2]
+- Drafts
+- Pocket Cast[^2]
 - Apple Mail[^3]
 - iTerm
-- Fig
+- Fzf
+- The Fuck
 - Things3[^4]
 - Telegram
 - Toggl Track、Timery、RescueTime、Timing [^5]
@@ -38,18 +40,31 @@ tags: []
 - Zotero
 - 欧路词典
 - IINA on Mac, PotPlayer on Win
-- Foobar、网易云音乐、Spotify
+- 网易云音乐
 - qBitorrent
 - downie
 - Espanso
 - Day One
 - Streaks
 
+# 手机App
+- 小宇宙、Pocket Cast
+- Day One
+- Streaks
+- Things3
+- Reeder
+- Drafts
+- Overlap
+- Apple Mail
+- Sleep Cycle
+- Life Cycle
+
 # 服务
--  FreshRSS [^6]
+- FreshRSS [^6]
 - Raindrop.io
 - ReadWise
-- Pocket
+- Instapaper
+- Caixin
 
 # 浏览器插件
 - Dark Reader
@@ -58,12 +73,12 @@ tags: []
 - Proxy Switchy Omega
 - Bitwarden（之前使用的密码管理器为Lastpass）
 - Tampermonkey
-- AdBlock
+- uBlock Origin
 - hypothesis
 - Raindrop.io
 - Youtube双字幕
 - Zotero Connector
-- Save To Pocket
+- Instapaper
 - Visual Value
 - Send To Kindle
 - Stylus
