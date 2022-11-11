@@ -1,3 +1,5 @@
+// original codes are from "https://github.com/timlrx/pliny/blob/main/packages/pliny/src/utils/contentlayer.ts"
+
 import GithubSlugger from 'github-slugger'
 import type { Blog } from 'contentlayer/generated'
 import type { Document, MDX } from 'contentlayer/core'
