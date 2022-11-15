@@ -8,7 +8,7 @@ import {
   remarkExtractFrontmatter,
   remarkCodeTitles,
   remarkImgToJsx,
-  extractTocHeadings,
+//   extractTocHeadings,
 } from 'pliny/mdx-plugins.js'
 // Rehype packages
 import rehypeSlug from 'rehype-slug'
@@ -34,7 +34,7 @@ const computedFields: ComputedFields = {
     type: 'string',
     resolve: (doc) => doc._raw.sourceFilePath,
   },
-  toc: { type: 'string', resolve: (doc) => extractTocHeadings(doc.body.raw) },
+//   toc: { type: 'string', resolve: (doc) => extractTocHeadings(doc.body.raw) },
 }
 
 export const Note = defineDocumentType(() => ({
