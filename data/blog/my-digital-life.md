@@ -8,8 +8,6 @@ tags: []
 
 这篇文章，简单说说我的数字生活。
 
-<TOCInline toc={props.toc} exclude="Overview" toHeading={2} />
-
 # 设备
 - 手机：iPhone 13 128GB
 - 笔记本： MacBookPro 13-inch 2018 8GB + 256GB

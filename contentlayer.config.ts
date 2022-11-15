@@ -8,7 +8,7 @@ import {
   remarkExtractFrontmatter,
   remarkCodeTitles,
   remarkImgToJsx,
-  extractTocHeadings,
+//   extractTocHeadings,
 } from 'pliny/mdx-plugins.js'
 // Rehype packages
 import rehypeSlug from 'rehype-slug'
@@ -17,6 +17,8 @@ import rehypeKatex from 'rehype-katex'
 import rehypeCitation from 'rehype-citation'
 import rehypePrismPlus from 'rehype-prism-plus'
 import rehypePresetMinify from 'rehype-preset-minify'
+
+import wikiLinkPlugin from 'remark-wiki-link-plus';
 
 const root = process.cwd()
 
@@ -34,21 +36,22 @@ const computedFields: ComputedFields = {
     type: 'string',
     resolve: (doc) => doc._raw.sourceFilePath,
   },
-  toc: { type: 'string', resolve: (doc) => extractTocHeadings(doc.body.raw) },
+//   toc: { type: 'string', resolve: (doc) => extractTocHeadings(doc.body.raw) },
+  toc: { type: 'string', resolve: (doc) => "123" },
 }
 
 export const Note = defineDocumentType(() => ({
-    name: 'Note',
-    filePathPattern: 'garden/**/*.md',
-    contentType: 'mdx',
-    fields: {
-        title: { type: 'string', required: true },
-        createdDate: { type: 'date', required: true },
-        updatedDate: { type: 'date', required: true },
-        tags: { type: 'list', of: { type: 'string' } },
-        description: { type: 'string' },
-    },
-    computedFields,
+  name: 'Note',
+  filePathPattern: 'garden/**/*.md',
+  contentType: 'mdx',
+  fields: {
+    title: { type: 'string', required: true },
+    createdDate: { type: 'date', required: true },
+    updatedDate: { type: 'date', required: true },
+    tags: { type: 'list', of: { type: 'string' } },
+    description: { type: 'string' },
+  },
+  computedFields,
 }))
 
 export const Blog = defineDocumentType(() => ({
@@ -78,9 +81,10 @@ export default makeSource({
     remarkPlugins: [
       remarkExtractFrontmatter,
       remarkGfm,
-      remarkCodeTitles,
-      remarkMath,
-      remarkImgToJsx,
+    //   remarkCodeTitles,
+    //   remarkMath,
+    //   remarkImgToJsx,
+      wikiLinkPlugin
     ],
     rehypePlugins: [
       rehypeSlug,
