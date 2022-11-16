@@ -4,12 +4,12 @@ import path from 'path'
 // Remark packages
 import remarkGfm from 'remark-gfm'
 import remarkMath from 'remark-math'
-import {
-  remarkExtractFrontmatter,
-  remarkCodeTitles,
-  remarkImgToJsx,
-//   extractTocHeadings,
-} from 'pliny/mdx-plugins.js'
+
+import remarkExtractFrontmatter from './mdx-plugins/remark-extract-frontmatter';
+import  remarkCodeTitles from './mdx-plugins/remark-code-titles';
+import remarkImgToJsx from './mdx-plugins/remark-img-to-jsx'
+import { extractTocHeadings } from './mdx-plugins/remark-toc-headings'
+
 // Rehype packages
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
@@ -81,9 +81,10 @@ export default makeSource({
     remarkPlugins: [
       remarkExtractFrontmatter,
       remarkGfm,
-    //   remarkCodeTitles,
-    //   remarkMath,
-    //   remarkImgToJsx,
+      remarkCodeTitles,
+      remarkMath,
+      remarkImgToJsx,
+      extractTocHeadings,
       wikiLinkPlugin
     ],
     rehypePlugins: [
