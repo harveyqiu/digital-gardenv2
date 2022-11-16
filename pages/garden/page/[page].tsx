@@ -2,6 +2,7 @@ import { PageSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
 import ListLayout from '@/layouts/ListLayout'
 import { allCoreContent } from 'pliny/utils/contentlayer'
+import { sortedPosts } from 'utils/contentlayer'
 import { POSTS_PER_PAGE } from '../index'
 import { InferGetStaticPropsType } from 'next'
 import { allNotes } from 'contentlayer/generated'
@@ -24,7 +25,7 @@ export const getStaticProps = async (context) => {
   const {
     params: { page },
   } = context
-  const posts = allNotes as Note[]
+  const posts = sortedPosts(allNotes) as Note[]
   const pageNumber = parseInt(page as string)
   const initialDisplayPosts = posts.slice(
     POSTS_PER_PAGE * (pageNumber - 1),
@@ -56,7 +57,7 @@ export default function PostPage({
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
-        title="All Posts"
+        title="All Notes"
       />
     </>
   )
