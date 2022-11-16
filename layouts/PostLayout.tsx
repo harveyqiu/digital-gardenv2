@@ -30,7 +30,6 @@ interface LayoutProps {
 export default function PostLayout({ content, next, prev, children }: LayoutProps) {
   const { filePath, path, slug, createdDate, updatedDate, title, tags } = content
   const basePath = path.split('/')[0]
-  const [loadComments, setLoadComments] = useState(false)
 
   return (
     <SectionContainer>

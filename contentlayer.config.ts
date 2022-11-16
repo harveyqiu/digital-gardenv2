@@ -36,8 +36,7 @@ const computedFields: ComputedFields = {
     type: 'string',
     resolve: (doc) => doc._raw.sourceFilePath,
   },
-//   toc: { type: 'string', resolve: (doc) => extractTocHeadings(doc.body.raw) },
-  toc: { type: 'string', resolve: (doc) => "123" },
+  toc: { type: 'string', resolve: (doc) => extractTocHeadings(doc.body.raw) },
 }
 
 export const Note = defineDocumentType(() => ({

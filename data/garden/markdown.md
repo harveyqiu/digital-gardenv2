@@ -18,7 +18,11 @@ updatedDate: "2022-11-09"
     - A universal document converter
         - convert docx to markdown
         - convert markdown to docx
-
+- SearchLink
+    - https://brettterpstra.com/2022/08/23/hook-and-searchlink/
+    - https://brettterpstra.com/projects/searchlink/
+- Hook
+    - https://hookproductivity.com/
 ## Pandoc and Markdown
 
  ```bash

@@ -1,4 +1,5 @@
-// original codes are from "https://github.com/timlrx/pliny/blob/main/packages/pliny/src/utils/contentlayer.ts"
+// Original codes are from "https://github.com/timlrx/pliny/blob/main/packages/pliny/src/utils/contentlayer.ts".
+// I edit some lines to suit my personal usage.
 
 import GithubSlugger from 'github-slugger'
 import type { Blog } from 'contentlayer/generated'
