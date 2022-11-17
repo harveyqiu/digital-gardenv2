@@ -29,11 +29,11 @@ export async function generateStaticParams() {
 }
 
 async function getPosts(type, page) {
-    var posts : Array<MDXDocument>
+    var posts: Blog[] | Note[];
     if (type == 'blog') {
-        var posts = sortedPosts(allBlogs)
+        var posts = sortedPosts(allBlogs) as Blog[]
     } else {
-        var posts = sortedPosts(allNotes)
+        var posts = sortedPosts(allNotes) as Note[]
     }
 
     const pageNumber = parseInt(page as string)
