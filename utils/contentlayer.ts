@@ -17,11 +17,11 @@ export function sortedPosts(posts: MDXDocument[]) {
     return posts.sort((a, b) => dateSortDesc(a.updatedDate, b.updatedDate))
   }
 
-export async function getAllTags(allBlogs: Blog[]) {
+export async function getAllTags(allPosts: Blog[]) {
     const tagCount: Record<string, number> = {}
   
     // Iterate through each post, putting all found tags into `tags`
-    allBlogs.forEach((file) => {
+    allPosts.forEach((file) => {
       if (file.tags && file.draft !== true) {
         file.tags.forEach((tag) => {
           const formattedTag = GithubSlugger.slug(tag)
