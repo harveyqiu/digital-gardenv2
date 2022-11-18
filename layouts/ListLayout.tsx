@@ -1,64 +1,21 @@
 'use client'
 
 import { useState } from 'react'
-import { useRouter } from 'next/router'
+
 import { formatDate } from 'pliny/utils/formatDate'
 import { CoreContent } from 'pliny/utils/contentlayer'
 import type { Blog, Note } from 'contentlayer/generated'
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
+import Pagination, {PaginationProps} from '@/components/Pagination'
 
-interface PaginationProps {
-  totalPages: number
-  currentPage: number
-}
 interface ListLayoutProps {
   posts: CoreContent<Blog|Note>[]
   title: string
   initialDisplayPosts?: CoreContent<Blog|Note>[]
   pagination?: PaginationProps
 }
-
-// function Pagination({ totalPages, currentPage }: PaginationProps) {
-//   const router = useRouter()
-//   const basePath = router.pathname.split('/')[1]
-//   const prevPage = currentPage - 1 > 0
-//   const nextPage = currentPage + 1 <= totalPages
-
-//   return (
-//     <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-//       <nav className="flex justify-between">
-//         {!prevPage && (
-//           <button className="cursor-auto disabled:opacity-50" disabled={!prevPage}>
-//             Previous
-//           </button>
-//         )}
-//         {prevPage && (
-//           <Link
-//             href={currentPage - 1 === 1 ? `/${basePath}/` : `/${basePath}/page/${currentPage - 1}`}
-//             rel="prev"
-//           >
-//             Previous
-//           </Link>
-//         )}
-//         <span>
-//           {currentPage} of {totalPages}
-//         </span>
-//         {!nextPage && (
-//           <button className="cursor-auto disabled:opacity-50" disabled={!nextPage}>
-//             Next
-//           </button>
-//         )}
-//         {nextPage && (
-//           <Link href={`/${basePath}/page/${currentPage + 1}`} rel="next">
-//             Next
-//           </Link>
-//         )}
-//       </nav>
-//     </div>
-//   )
-// }
 
 export default function ListLayout({
   posts,
@@ -146,9 +103,9 @@ export default function ListLayout({
           })}
         </ul>
       </div>
-      {/* {pagination && pagination.totalPages > 1 && !searchValue && (
+      {pagination && pagination.totalPages > 1 && !searchValue && (
         <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
-      )} */}
+      )}
     </>
   )
 }
