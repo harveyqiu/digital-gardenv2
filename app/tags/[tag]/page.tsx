@@ -13,7 +13,7 @@ export async function generateStaticParams() {
     return Object.keys(tags).map((tag) => ({
           tag
       }))
-  }
+}
 
 async function getPostsAndTag (tag: string) {
     const filteredPosts = allCoreContent(
