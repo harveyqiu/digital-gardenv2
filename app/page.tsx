@@ -1,5 +1,5 @@
 import Link from '@/components/Link'
-import { PageSEO } from '@/components/SEO'
+// import { PageSEO } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { formatDate } from 'pliny/utils/formatDate'
@@ -9,20 +9,19 @@ import { allBlogs } from 'contentlayer/generated'
 import { sortedPosts } from 'utils/contentlayer'
 import type { Blog } from 'contentlayer/generated'
 
-
 const MAX_DISPLAY = 7
 
-export const getStaticProps = async () => {
+async function getPosts() {
   const _sortedPosts = sortedPosts(allBlogs) as Blog[]
   const posts = allCoreContent(_sortedPosts)
-
-  return { props: { posts } }
+  return posts
 }
 
-export default function Home({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
-  return (
+export default async function Home() {
+    const posts = await getPosts()
+    return (
     <>
-      <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
+      {/* <PageSEO title={siteMetadata.title} description={siteMetadata.description} /> */}
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
@@ -43,7 +42,9 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                     <dl>
                       <dt className="sr-only">Updated on</dt>
                       <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                        <time dateTime={updatedDate}>{formatDate(updatedDate, siteMetadata.locale)}</time>
+                        <time dateTime={updatedDate}>
+                          {formatDate(updatedDate, siteMetadata.locale)}
+                        </time>
                       </dd>
                     </dl>
                     <div className="space-y-5 xl:col-span-3">
@@ -51,7 +52,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                         <div>
                           <h2 className="text-2xl font-bold leading-8 tracking-tight">
                             <Link
-                              href={`/blog/${slug}`}
+                              href={`/${slug}`}
                               className="text-gray-900 dark:text-gray-100"
                             >
                               {title}
@@ -69,7 +70,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                       </div>
                       <div className="text-base font-medium leading-6">
                         <Link
-                          href={`/blog/${slug}`}
+                          href={`/${slug}`}
                           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                           aria-label={`Read "${title}"`}
                         >
