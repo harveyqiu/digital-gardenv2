@@ -33,7 +33,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
 
   return (
     <SectionContainer>
-      <BlogSEO url={`${siteMetadata.siteUrl}/${path}`} {...content} />
+      {/* <BlogSEO url={`${siteMetadata.siteUrl}/${path}`} {...content} /> */}
       <ScrollTopAndComment />
       <article>
         <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
