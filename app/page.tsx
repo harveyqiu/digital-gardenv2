@@ -11,13 +11,6 @@ import type { Blog } from 'contentlayer/generated'
 
 const MAX_DISPLAY = 7
 
-// export const getStaticProps = async () => {
-//   const _sortedPosts = sortedPosts(allBlogs) as Blog[]
-//   const posts = allCoreContent(_sortedPosts)
-
-//   return { props: { posts } }
-// }
-
 async function getPosts() {
   const _sortedPosts = sortedPosts(allBlogs) as Blog[]
   const posts = allCoreContent(_sortedPosts)
@@ -59,7 +52,7 @@ export default async function Home() {
                         <div>
                           <h2 className="text-2xl font-bold leading-8 tracking-tight">
                             <Link
-                              href={`/blog/${slug}`}
+                              href={`/${slug}`}
                               className="text-gray-900 dark:text-gray-100"
                             >
                               {title}
