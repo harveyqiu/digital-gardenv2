@@ -1,3 +1,4 @@
+// Original codes are from "https://github.com/timlrx/pliny/
 import { visit } from 'unist-util-visit';
 import sizeOf from 'image-size';
 import fs from 'fs';

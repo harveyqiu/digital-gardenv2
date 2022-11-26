@@ -1,3 +1,4 @@
+// Original codes are from "https://github.com/timlrx/pliny/
 import { visit } from 'unist-util-visit';
 import slugger from 'github-slugger';
 import {toString} from 'mdast-util-to-string';
