@@ -1,7 +1,7 @@
 ---
 title: "数据法学"
 description: "数据法学"
-updatedDate: "2022-04-18"
+updatedDate: "2023-01-16"
 createdDate: "2022-04-18"
 ---
 
