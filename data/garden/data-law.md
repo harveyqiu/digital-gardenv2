@@ -33,3 +33,6 @@ createdDate: "2022-04-18"
         - 《GDPR》条文和EPDB或WP29发布的文件之间的关系
         - 如何将条文落实到真实实践中
             - 拆解条文，形成清单（checklist）
+
+# 论文
+- [欧洲个人信息保护法的发展历程及其改革创新 - 中国知网](https://kns.cnki.net/kcms/detail/detail.aspx?dbname=CJFDLAST2017&filename=JNXB201702007)
