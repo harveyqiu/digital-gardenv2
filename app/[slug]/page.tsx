@@ -25,30 +25,16 @@ async function getPost({ params }) {
 
     switch(type) {
         case 'blog':
-            let blogIndex = sortedBlog.findIndex((p) => p.slug === slug)
-            let prevBlog = sortedBlog[blogIndex + 1] || null
-            let prevBlogContent = prevBlog ? coreContent(prevBlog) : null
-            let nextBlog = sortedBlog[blogIndex - 1] || null
-            let nextBlogContent = nextBlog ? coreContent(nextBlog) : null
             let blog = sortedBlog.find((p) => p.slug === slug)
             
             return {
                 post:blog,
-                prev:prevBlogContent,
-                next:nextBlogContent,
             }
         case 'note':
-            let postIndex = sortedNote.findIndex((p) => p.slug === slug)
-            let prevContent = sortedNote[postIndex + 1] || null
-            let prev = prevContent ? coreContent(prevContent) : null
-            let nextContent = sortedNote[postIndex - 1] || null
-            let next = nextContent ? coreContent(nextContent) : null
             let post = sortedNote.find((p) => p.slug === slug)
             
             return {
-                post,
-                prev,
-                next,
+                post
             }
     }
 
@@ -68,7 +54,7 @@ export default async function PostPage({ params }) {
                     </PageTitle>
                 </div>
             ) : (
-                <MDXRender post={post} prev={prev} next={next} />
+                <MDXRender post={post} />
             )}
         </>
     )
