@@ -41,7 +41,7 @@ async function getPost({ params }) {
 }
 
 export default async function PostPage({ params }) {
-    const { post, prev, next } = await getPost({ params })
+    const { post } = await getPost({ params })
     return (
         <>
             {'draft' in post && post.draft === true ? (
