@@ -32,8 +32,8 @@ tags: []
 - gitui
 - Things3[^4] and Apple Reminder
 - Telegram
-- Toggl Track、Timery、RescueTime、Timing [^5]
-- PDF Expert
+- Toggl Track、Timery、Timing [^5]
+- Skim
 - MarginNote
 - Zotero
 - 欧路词典
