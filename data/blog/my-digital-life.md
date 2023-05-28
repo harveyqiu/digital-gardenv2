@@ -1,7 +1,7 @@
 ---
 title: "My Digital Life"
 description: "What device, what app, what service I use"
-updatedDate: "2023-05-01"
+updatedDate: "2023-05-28"
 createdDate: "2022-02-23"
 tags: []
 ---
@@ -11,7 +11,7 @@ tags: []
 # 设备
 - 手机：iPhone 13 128GB
 - 笔记本： MacBook Air M2 2022 with 16GB RAM and 256GB SSD
-- 耳机： Bose QC35 II
+- 耳机： Bose QC35 II + Airpods Pro II
 - 蓝牙键盘：GANSS GS87-D 银轴 (for home) and Keychron K8 (for work)
 - 蓝牙鼠标：Logitech M337 (for home) and Logitech M590 (for work)
 - PC：i7-6820HK + 32GB + 256GB SSD + 1TB HDD + GTX 1070
