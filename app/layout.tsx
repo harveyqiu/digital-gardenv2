@@ -7,7 +7,6 @@ import 'katex/dist/katex.css'
 
 import { Inter } from '@next/font/google'
 import SectionContainer from '@/components/SectionContainer'
-import Logo from '@/data/logo.svg'
 import Link from '@/components/Link';
 import ThemeSwitch from '@/components/ThemeSwitch'
 import headerNavLinks from '@/data/headerNavLinks'
@@ -37,9 +36,6 @@ export default function RootLayout({
           <div>
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
-                <div className="mr-3">
-                  <Logo />
-                </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
                   <div className="hidden h-6 text-2xl font-semibold sm:block">
                     {siteMetadata.headerTitle}
