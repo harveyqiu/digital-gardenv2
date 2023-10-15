@@ -53,6 +53,23 @@ export const Note = defineDocumentType(() => ({
   computedFields,
 }))
 
+// const const Handbook = defineDocumentType(() => ({
+//     name: 'Handbook',
+//     filePathPattern: 'handbook/**/*.md',
+//     contentType: 'mdx',
+//     fields: {
+//       title: { type: 'string', required: true },
+//       createdDate: { type: 'date', required: true },
+//       updatedDate: { type: 'date', required: true },
+//       tags: { type: 'list', of: { type: 'string' } },
+//       draft: { type: 'boolean' },
+//       description: { type: 'string' },
+//       images: { type: 'list', of: { type: 'string' } },
+//       layout: { type: 'string' },
+//     },
+//     computedFields,
+// }))
+
 export const Blog = defineDocumentType(() => ({
   name: 'Blog',
   filePathPattern: 'blog/**/*.md',
@@ -83,7 +100,6 @@ export default makeSource({
       remarkCodeTitles,
       remarkMath,
       remarkImgToJsx,
-      extractTocHeadings,
       wikiLinkPlugin
     ],
     rehypePlugins: [

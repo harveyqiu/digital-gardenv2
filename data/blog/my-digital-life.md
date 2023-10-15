@@ -6,6 +6,8 @@ createdDate: "2022-02-23"
 tags: []
 ---
 
+<TOCInline toc={props.toc} />
+
 这篇文章，简单说说我的数字生活。
 
 # 设备
