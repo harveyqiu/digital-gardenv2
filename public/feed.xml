@@ -1,0 +1,124 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Runtime</title>
+      <link>https://garden.harveyqiu.xyz/blog</link>
+      <description>Harvey writes posts about ups and downs, failures and mistakes.</description>
+      <language>zh-CN</language>
+      <managingEditor>harveyqiu1110@outlook.com (Harvey Chiu)</managingEditor>
+      <webMaster>harveyqiu1110@outlook.com (Harvey Chiu)</webMaster>
+      <lastBuildDate>Sat, 16 Dec 2023 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://garden.harveyqiu.xyz/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://garden.harveyqiu.xyz/blog/codes</guid>
+    <title>Codes</title>
+    <link>https://garden.harveyqiu.xyz/blog/codes</link>
+    
+    <pubDate>Sat, 16 Dec 2023 00:00:00 GMT</pubDate>
+    <author>harveyqiu1110@outlook.com (Harvey Chiu)</author>
+    
+  </item>
+
+  <item>
+    <guid>https://garden.harveyqiu.xyz/blog/how-to-store-web-page</guid>
+    <title>网页内容存储</title>
+    <link>https://garden.harveyqiu.xyz/blog/how-to-store-web-page</link>
+    
+    <pubDate>Tue, 03 May 2022 00:00:00 GMT</pubDate>
+    <author>harveyqiu1110@outlook.com (Harvey Chiu)</author>
+    
+  </item>
+
+  <item>
+    <guid>https://garden.harveyqiu.xyz/blog/ideas-about-legal-search</guid>
+    <title>在法律检索方面的一些小想法</title>
+    <link>https://garden.harveyqiu.xyz/blog/ideas-about-legal-search</link>
+    
+    <pubDate>Mon, 01 May 2023 00:00:00 GMT</pubDate>
+    <author>harveyqiu1110@outlook.com (Harvey Chiu)</author>
+    
+  </item>
+
+  <item>
+    <guid>https://garden.harveyqiu.xyz/blog/lawyer-tool</guid>
+    <title>Lawyers&#39; tools</title>
+    <link>https://garden.harveyqiu.xyz/blog/lawyer-tool</link>
+    <description>Lawyers&#39; tools</description>
+    <pubDate>Thu, 23 Feb 2023 00:00:00 GMT</pubDate>
+    <author>harveyqiu1110@outlook.com (Harvey Chiu)</author>
+    
+  </item>
+
+  <item>
+    <guid>https://garden.harveyqiu.xyz/blog/legal-research-with-chagpt</guid>
+    <title>How to Use ChatGPT Wrongly for Legal Research</title>
+    <link>https://garden.harveyqiu.xyz/blog/legal-research-with-chagpt</link>
+    <description>How to use ChatGPT wrongly for legal research</description>
+    <pubDate>Sun, 28 May 2023 00:00:00 GMT</pubDate>
+    <author>harveyqiu1110@outlook.com (Harvey Chiu)</author>
+    
+  </item>
+
+  <item>
+    <guid>https://garden.harveyqiu.xyz/blog/my-digital-life</guid>
+    <title>My Digital Life</title>
+    <link>https://garden.harveyqiu.xyz/blog/my-digital-life</link>
+    <description>What device, what app, what service I use</description>
+    <pubDate>Sun, 28 May 2023 00:00:00 GMT</pubDate>
+    <author>harveyqiu1110@outlook.com (Harvey Chiu)</author>
+    
+  </item>
+
+  <item>
+    <guid>https://garden.harveyqiu.xyz/blog/ow2</guid>
+    <title>守望先锋归来</title>
+    <link>https://garden.harveyqiu.xyz/blog/ow2</link>
+    
+    <pubDate>Mon, 10 Oct 2022 00:00:00 GMT</pubDate>
+    <author>harveyqiu1110@outlook.com (Harvey Chiu)</author>
+    
+  </item>
+
+  <item>
+    <guid>https://garden.harveyqiu.xyz/blog/password-manager</guid>
+    <title>Password Manager</title>
+    <link>https://garden.harveyqiu.xyz/blog/password-manager</link>
+    
+    <pubDate>Tue, 02 Aug 2022 00:00:00 GMT</pubDate>
+    <author>harveyqiu1110@outlook.com (Harvey Chiu)</author>
+    
+  </item>
+
+  <item>
+    <guid>https://garden.harveyqiu.xyz/blog/personal-search-engine</guid>
+    <title>Personal Search Engine</title>
+    <link>https://garden.harveyqiu.xyz/blog/personal-search-engine</link>
+    
+    <pubDate>Sat, 03 Sep 2022 00:00:00 GMT</pubDate>
+    <author>harveyqiu1110@outlook.com (Harvey Chiu)</author>
+    <category>Tech</category>
+  </item>
+
+  <item>
+    <guid>https://garden.harveyqiu.xyz/blog/thoughts-about-productivity</guid>
+    <title>效率的迷思</title>
+    <link>https://garden.harveyqiu.xyz/blog/thoughts-about-productivity</link>
+    <description>Just get shit done</description>
+    <pubDate>Sat, 20 Aug 2022 00:00:00 GMT</pubDate>
+    <author>harveyqiu1110@outlook.com (Harvey Chiu)</author>
+    <category>Productivity</category>
+  </item>
+
+  <item>
+    <guid>https://garden.harveyqiu.xyz/blog/time-tracking</guid>
+    <title>Time Tracking</title>
+    <link>https://garden.harveyqiu.xyz/blog/time-tracking</link>
+    <description>You only waste time if you’re not intentional about how you spend it.</description>
+    <pubDate>Sun, 12 Jun 2022 00:00:00 GMT</pubDate>
+    <author>harveyqiu1110@outlook.com (Harvey Chiu)</author>
+    <category>Productivity</category>
+  </item>
+
+    </channel>
+  </rss>

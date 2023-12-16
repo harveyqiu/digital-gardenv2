@@ -1,7 +1,8 @@
 // Original codes are from "https://github.com/timlrx/pliny/
 import { VFile } from 'vfile'
-import { Parent } from 'unist'
-import { visit } from 'unist-util-visit'
+import { Parent, Node } from 'unist'
+import { Heading } from 'mdast'
+import { visitParents } from 'unist-util-visit-parents'
 import slugger from 'github-slugger'
 import { toString } from 'mdast-util-to-string'
 import { remark } from 'remark'
@@ -15,7 +16,7 @@ export type Toc = {
 export function remarkTocHeadings() {
   return (tree: Parent, file: VFile) => {
     const toc: Toc = []
-    visit(tree, 'heading', (node: Heading) => {
+    visitParents(tree, 'heading', (node: Heading) => {
       const textContent = toString(node)
       toc.push({
         value: textContent,
