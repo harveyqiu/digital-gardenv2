@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://garden.harveyqiu.xyz/blog/20250131</loc>
+  </url>
+
+  <url>
+    <loc>https://garden.harveyqiu.xyz/blog/Untitled-20231224</loc>
+  </url>
+
+  <url>
     <loc>https://garden.harveyqiu.xyz/blog/codes</loc>
   </url>
 
@@ -18,6 +26,10 @@
 
   <url>
     <loc>https://garden.harveyqiu.xyz/blog/legal-research-with-chagpt</loc>
+  </url>
+
+  <url>
+    <loc>https://garden.harveyqiu.xyz/blog/microservice-vs-monolith</loc>
   </url>
 
   <url>
