@@ -2,3 +2,5 @@
 .next/
 node_modules/
 .contentlayer/
+public/feed.xml
+public/sitemap.xml
