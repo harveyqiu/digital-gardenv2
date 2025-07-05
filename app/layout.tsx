@@ -23,9 +23,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang={siteMetadata.language} className="scroll-smooth">
+    <html
+      lang={siteMetadata.language}
+      className="scroll-smooth"
+      suppressHydrationWarning
+    >
       <body className="bg-white text-black antialiased dark:bg-gray-900 dark:text-white">
-        <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme={siteMetadata.theme}
+          enableSystem
+        >
           <SectionContainer>
             <div className={`${inter.className} flex h-screen flex-col justify-between font-sans`}>
               <header className="flex items-center justify-between py-10">
