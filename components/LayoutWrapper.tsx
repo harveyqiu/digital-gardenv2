@@ -1,4 +1,4 @@
-import { Inter } from '@next/font/google'
+import { Inter } from 'next/font/google'
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 import Link from './Link'

@@ -11,8 +11,7 @@
     "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts"
   },
   "dependencies": {
-    "@next/bundle-analyzer": "13.0.3",
-    "@next/font": "13.0.3",
+    "@next/bundle-analyzer": "14.1.0",
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/typography": "^0.5.16",
     "@types/mdast": "^4.0.4",
@@ -26,7 +25,7 @@
     "mdast": "^3.0.0",
     "mdast-util-to-string": "^3.2.0",
     "mdx-bundler": "^9.2.1",
-    "next": "13.0.3",
+    "next": "14.1.0",
     "next-contentlayer": "0.2.9",
     "next-themes": "^0.2.1",
     "pliny": "0.0.10",
@@ -58,7 +57,7 @@
     "dedent": "^0.7.0",
     "esbuild-register": "3.3.3",
     "eslint": "^8.57.1",
-    "eslint-config-next": "13.0.3",
+    "eslint-config-next": "14.1.0",
     "eslint-config-prettier": "^8.10.0",
     "eslint-plugin-prettier": "^4.2.1",
     "file-loader": "^6.2.0",
