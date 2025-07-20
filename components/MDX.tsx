@@ -11,7 +11,7 @@ export default function MDXRender({post}) {
       layout={post.layout || DEFAULT_LAYOUT}
       content={post}
       code={post.body.code}
-      MDXComponents={MDXComponents}
+      components={MDXComponents}
       toc={post.toc}
     />
   )
