@@ -16,11 +16,12 @@ export type Toc = {
 export function remarkTocHeadings() {
   return (tree: Parent, file: VFile) => {
     const toc: Toc = []
+    const slugs = new slugger()
     visitParents(tree, 'heading', (node: Heading) => {
       const textContent = toString(node)
       toc.push({
         value: textContent,
-        url: '#' + slugger.slug(textContent),
+        url: '#' + slugs.slug(textContent),
         depth: node.depth,
       })
     })

@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm update:*)",
+      "Bash(pnpm run:*)",
+      "Bash(source:*)",
+      "Bash(nvm use:*)",
+      "Bash(pnpm list:*)",
+      "Bash(node:*)"
+    ],
+    "deny": []
+  }
+}

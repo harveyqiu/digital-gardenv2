@@ -5,7 +5,7 @@ import '@/css/tailwind.css'
 import '@/css/prism.css'
 import 'katex/dist/katex.css'
 
-import { Inter } from '@next/font/google'
+import { Inter } from 'next/font/google'
 import SectionContainer from '@/components/SectionContainer'
 import Link from '@/components/Link';
 import ThemeSwitch from '@/components/ThemeSwitch'

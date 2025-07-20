@@ -36,6 +36,9 @@
       "@/css/*": [
         "css/*"
       ],
+      "@/utils/*": [
+        "utils/*"
+      ],
       "contentlayer/generated": [
         "./.contentlayer/generated"
       ]

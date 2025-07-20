@@ -1,9 +1,56 @@
 // @ts-check
-const { fontFamily } = require('tailwindcss/defaultTheme')
-const colors = require('tailwindcss/colors')
+// Using default font families for TailwindCSS 4.x compatibility
+const fontFamily = {
+  sans: [
+    'ui-sans-serif',
+    'system-ui',
+    'sans-serif',
+    '"Apple Color Emoji"',
+    '"Segoe UI Emoji"',
+    '"Segoe UI Symbol"',
+    '"Noto Color Emoji"'
+  ],
+  serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+  mono: [
+    'ui-monospace',
+    'SFMono-Regular',
+    '"Menlo"',
+    'Monaco',
+    'Consolas',
+    '"Liberation Mono"',
+    '"Courier New"',
+    'monospace'
+  ]
+}
+// Define colors for TailwindCSS 4.x compatibility
+const colors = {
+  teal: {
+    50: '#f0fdfa',
+    100: '#ccfbf1',
+    200: '#99f6e4',
+    300: '#5eead4',
+    400: '#2dd4bf',
+    500: '#14b8a6',
+    600: '#0d9488',
+    700: '#0f766e',
+    800: '#115e59',
+    900: '#134e4a'
+  },
+  neutral: {
+    50: '#fafafa',
+    100: '#f5f5f5',
+    200: '#e5e5e5',
+    300: '#d4d4d4',
+    400: '#a3a3a3',
+    500: '#737373',
+    600: '#525252',
+    700: '#404040',
+    800: '#262626',
+    900: '#171717'
+  }
+}
 
 // ../node_modules/pliny/dist/**/*.mjs is needed for monorepo setup
-/** @type {import("tailwindcss/types").Config } */
 module.exports = {
   content: [
     '../node_modules/pliny/**/*.{js,ts,tsx}',

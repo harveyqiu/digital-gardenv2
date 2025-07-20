@@ -1,18 +1,21 @@
 /* eslint-disable react/display-name */
 import React from 'react'
-import { MDXLayout, ComponentMap } from 'pliny/mdx-components'
-import { TOCInline } from 'pliny/ui/TOCInline'
-import { Pre } from 'pliny/ui/Pre'
+// import TOCInline from 'pliny/ui/TOCInline'
+// import Pre from 'pliny/ui/Pre'
 
 import Image from './Image'
 import CustomLink from './Link'
 
-export const Wrapper = ({ layout, content, ...rest }: MDXLayout) => {
+// Temporary fallback components
+const TOCInline = ({ toc, ...props }: any) => <div>TOC placeholder</div>
+const Pre = ({ children, ...props }: any) => <pre {...props}>{children}</pre>
+
+export const Wrapper = ({ layout, content, ...rest }: any) => {
   const Layout = require(`../layouts/${layout}`).default
   return <Layout content={content} {...rest} />
 }
 
-export const MDXComponents: ComponentMap = {
+export const MDXComponents = {
   Image,
   TOCInline,
   a: CustomLink,

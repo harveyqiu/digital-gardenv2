@@ -10,6 +10,7 @@ export default function MDXRender({post}) {
     <MDXLayoutRenderer
       layout={post.layout || DEFAULT_LAYOUT}
       content={post}
+      code={post.body.code}
       MDXComponents={MDXComponents}
       toc={post.toc}
     />

@@ -96,19 +96,19 @@ export default makeSource({
     cwd: process.cwd(),
     remarkPlugins: [
       remarkExtractFrontmatter,
-      remarkGfm,
+      // remarkGfm, // Temporarily disabled due to table parsing conflicts
       remarkCodeTitles,
-      remarkMath,
+      // remarkMath, // Temporarily disabled due to slugger conflicts
       remarkImgToJsx,
-      wikiLinkPlugin
+      // wikiLinkPlugin // Temporarily disabled to isolate issues
     ],
     rehypePlugins: [
       rehypeSlug,
       rehypeAutolinkHeadings,
-      rehypeKatex,
-      [rehypeCitation, { path: path.join(root, 'data') }],
-      [rehypePrismPlus, { ignoreMissing: true }],
-      rehypePresetMinify,
+      // rehypeKatex, // Temporarily disabled due to vfile version conflicts
+      // [rehypeCitation, { path: path.join(root, 'data') }], // Temporarily disabled
+      // [rehypePrismPlus, { ignoreMissing: true }], // Temporarily disabled
+      // rehypePresetMinify, // Temporarily disabled
     ],
   },
 })
